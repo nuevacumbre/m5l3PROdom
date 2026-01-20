@@ -84,11 +84,13 @@ document.addEventListener("DOMContentLoaded", () => {
     html += `${num1} - ${num2} = ${resta}<br>`;
     html += `${num1} * ${num2} = ${multiplicacion}<br>`;
     html += `${num1} / ${num2} = ${division}<br>`;
-    html += `<br>La suma de los resultados es ${
-      typeof division === "number"
-        ? suma + resta + multiplicacion + division
-        : suma + resta + multiplicacion
-    }`;
+    // ✅ CORRECCIÓN: Sumar SOLO números, no strings
+    let total = suma + resta + multiplicacion;
+    if (typeof division === "number") {
+      total += division;
+    }
+
+    html += `<br>La suma de los resultados es ${total}`;
 
     // Insertamos usando innerHTML porque necesitamos saltos de línea
     resultadoCalculos.innerHTML = html;
