@@ -1,0 +1,65 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas de cada ejercicio */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* Formularios */
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="color"] {
+  margin-left: 5px;
+}
+
+/* Botones */
+button {
+  margin-top: 8px;
+  padding: 5px 10px;
+  background-color: #00aa44;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #008a37;
+}
+
+/* Resultados */
+.resultado {
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+/* Párrafo largo del ejercicio 2 */
+.parrafo-largo {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}

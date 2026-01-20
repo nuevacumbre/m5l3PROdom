@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Actividad DOM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Actividad de aprendizaje: DOM</h1>
+
+  <!-- 1. Repetir palabra -->
+  <section class="card">
+    <h2>1. Repetir palabra</h2>
+    <label>
+      Palabra:
+      <input type="text" id="palabra" placeholder="Hola" />
+    </label>
+
+    <label>
+      ¿Cuántas veces?
+      <input type="number" id="veces" min="1" value="1" />
+    </label>
+
+    <button id="btnRepetir">REPETIR</button>
+
+    <p id="resultadoRepetir" class="resultado"></p>
+  </section>
+
+  <!-- 2. Cambiar color de fondo -->
+  <section class="card">
+    <h2>2. Aplicar color</h2>
+    <label>
+      Elija un color:
+      <!-- input de tipo color para elegir cualquier color -->
+      <input type="color" id="colorFondo" value="#00ff00" />
+    </label>
+
+    <button id="btnAplicarColor">APLICAR</button>
+
+    <p id="parrafoColor" class="parrafo-largo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      possimus incidunt ducimus officiis tempore blanditiis sapiente
+      perferendis non. Eligendi corrupti eveniet quae saepe eaque itaque
+      labore fugiat tempora, consequatur quam?
+    </p>
+  </section>
+
+  <!-- 3. Operaciones con dos números -->
+  <section class="card">
+    <h2>3. Operaciones aritméticas</h2>
+    <label>
+      Ingrese un número:
+      <input type="number" id="num1" />
+    </label>
+
+    <label>
+      Ingrese otro número:
+      <input type="number" id="num2" />
+    </label>
+
+    <button id="btnCalcular">CALCULAR</button>
+
+    <div id="resultadoCalculos" class="resultado"></div>
+  </section>
+
+  <!-- 4. Invertir texto -->
+  <section class="card">
+    <h2>4. Invertir texto</h2>
+    <label>
+      Ingrese algo:
+      <input type="text" id="textoOriginal" placeholder="Holanda que talca" />
+    </label>
+
+    <button id="btnInvertir">INVERTIR</button>
+
+    <p id="textoInvertido" class="resultado"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
